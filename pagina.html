@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="assets/images/tanjiro.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="https://b.thumbs.redditmedia.com/VnsEYnqHXJ-eBlr9LGxbUQNW-ODDuvSUdOZJ0XTMGNg.png"
+    type="image/x-icon">
+
+  <title> Elsword </title>
+</head>
+<style>
+  
+  .container-fluid {
+    max-width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+  }
+
+  .card {
+    box-shadow: 0px 0px 10px rgba(183, 87, 87, 0.3);
+
+  }
+
+  .card-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .carousel-inner .carousel-item img {
+    height: 550px !important;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  #titulo {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .Intro {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 30vh;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .social {
+    color: #fff;
+    /* Color del texto */
+  }
+
+  .social i {
+    color: #ff0000;
+    /* Color de fondo de los iconos */
+  }
+
+  #footer a {
+    color: white;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .container-fluid {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 2px;
+    }
+
+    .carousel-inner .carousel-item img {
+      height: 200px !important;
+      width: 100%;
+      object-fit: fill;
+      object-position: center;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .Intro {
+      font-size: 18px;
+    }
+
+    .card {
+      margin: 2px;
+      width: 100%;
+
+    }
+
+    .card-body {
+      width: 100%;
+    }
+
+    .card-title {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .card-text {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+
+    iframe {
+      width: 100%;
+      height: 30vh;
+      border-radius: 15px;
+    }
+
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    #footer a {
+      color: rgb(168, 21, 21);
+    }
+  }
+</style>
+
+<body>
+  <!--Main Container-->
+  <div class="container-fluid">
+    <!--Header-->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="pagina.html">Elsword</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin header-->
+    <!--Main- CARROUSEL-->
+    <main id="main">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block rounded"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9119b56-ff95-43c1-84e5-014fd6b5c60d/ddqj8mv-fa2a6733-64fc-49c4-8565-838234bc89c7.png/v1/fill/w_1192,h_670,q_70,strp/elsword_add_doombringer_master_class_background__by_twistedscythearts_ddqj8mv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2I5MTE5YjU2LWZmOTUtNDNjMS04NGU1LTAxNGZkNmI1YzYwZFwvZGRxajhtdi1mYTJhNjczMy02NGZjLTQ5YzQtODU2NS04MzgyMzRiYzg5YzcucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LlV_teeI3GpYzTrSjuadITumNsvrZCeIliuEMzCHBp8"
+              alt="Demon 1">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded"
+              src="https://cdnb.artstation.com/p/assets/images/images/043/918/469/large/pneuma-enpftbfuyaa-21o.jpg?1638611783"
+              alt="Demon 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="https://elwiki.net/wiki/images/f/f0/Portrait_-_Bloody_Queen_NoFX.png"
+              alt="Demon 3">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded" src="https://gaminglyfe.com/wp-content/uploads/2019/12/Elsword.png"
+              alt="Demon 4">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block rounded" src="https://elwiki.net/wiki/images/3/39/Portrait_-_Shakti.png" alt="Demon 5">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block rounded"
+              src="https://cdn.akamai.steamstatic.com/steam/apps/237310/extras/616x232.png?t=1615406614" alt="Demon 6">
+          </div>
+        </div>
+      </div>
+    </main>
+    <br>
+    <!--Fin Main-->
+    <div class="mt-2 m-1 text-dark rounded text-center p-1">
+      <h1>Elsword:</h1>
+      <p class="Intro">Elsword es un juego de rol en línea multijugador masivo (MMORPG) desarrollado por la compañía
+        surcoreana KOG Studios. El juego fue lanzado originalmente en Corea del Sur en 2007 y ha sido lanzado en varios
+        otros países desde entonces.
+
+        Elsword se centra en un grupo de personajes jugables, cada uno con habilidades y habilidades únicas. Los
+        jugadores pueden elegir entre varios personajes y explorar el mundo del juego, completar misiones y desafiar a
+        otros jugadores en PvP (jugador contra jugador) en línea.
+      </p>
+
+      <p class="Intro">El juego utiliza un sistema de combate de acción en tiempo real, lo que significa que los
+        jugadores deben moverse y atacar de manera activa para derrotar a sus oponentes. Además de la jugabilidad PvE y
+        PvP, Elsword también ofrece modos de juego cooperativos y una amplia gama de opciones de personalización para
+        los personajes.
+
+        En general, Elsword es un juego popular en su género y cuenta con una gran comunidad de jugadores en todo el
+        mundo.</p>
+      <p>
+      <p>Cada personaje en Elsword tiene su propia historia y habilidades únicas, lo que los hace interesantes y
+        emocionantes de jugar. Los jugadores pueden elegir su personaje favorito y personalizarlo a través de equipos,
+        habilidades y elementos cosméticos.</p>
+    </div>
+
+    <!--Galeria Grupo Card #1- 1Ero-->
+    </style>
+    <h3 class="mb-3 pb-3 text-center">Heroes</h3>
+    <div class="card-group">
+      <div class="card m-1 p-2">
+        <img class="card-img-bottom" src="https://media.tenor.com/yB7MEsShyOUAAAAd/elsword-genesis.gif"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Elsword</h5>
+          <p class="card-text">Elsword entrenó duro desde una edad temprana para ser fuerte como su hermana, aprendiendo
+            sus técnicas con la espada de un caballero de Velder.
+            Comenzó su aventura cuando recibió la misión de restaurar El como miembro de El Search Party </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="https://media.tenor.com/VrDkuCqTlrAAAAAM/elsword-aisha.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Aisha</h5>
+          <p class="card-text">Después de perder su magia, Aisha se une a Elsword en un viaje para recuperarla.
+            Queriendo seguir los pasos de su mentor, entrena duro y finalmente domina los cuatro elementos de la
+            naturaleza. ¡Con el conocimiento que obtuvo a lo largo de su viaje, Aisha ahora puede controlar múltiples
+            elementos a la vez y descubre la forma definitiva de magia elemental! ¡Puede derretir las caras de múltiples
+            enemigos con un golpe de su bastón!.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card m-1 p-2">
+        <img class="card-img-top" src="https://media.tenor.com/LkuwM3YuReMAAAAC/elsword-eve.gif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Eve</h5>
+          <p class="card-text">La Reina de Nasod, con gran inteligencia y sentido de sí mismo.
+
+            Eve entró en hibernación cuando el poder de El desapareció repentinamente, pero se despierta cuando la
+            energía de El se filtra debido a la perturbación causada por El Search Party.
+
+            Ella se une a Elsword y sus amigos para encontrar el El para reconstruir el núcleo de energía que encontró
+            destruido.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <!--Galeria Grupo Card #2 -->
+      <div class="card-group">
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="https://media.tenor.com/txJQ0mYmDkYAAAAd/elsword-laby.gif" ju
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Laby</h5>
+            <p class="card-text">Vivió en lo profundo de la Selva Negra durante un tiempo no especificado, pero
+              finalmente pudo irse, guiada por 'Tercera Luz Azul'.Ella decide dejar el bosque y emprender un viaje para
+              saber quién es ella.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="https://media.tenor.com/t8I5uZ3DgPYAAAAC/elsword-chung.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Chung</h5>
+            <p class="card-text">El sucesor de la familia Seiker, conocidos protectores de la ciudad de Hamel.
+
+              Cuando el padre de Chung, el Colossus Helputt blanco , se corrompe por la magia demoníaca e invade Hamel,
+              Chung intenta evitar la invasión pero falla.
+
+              Se une a El Search Party para volverse más fuerte y decide usar Chung en lugar de su nombre real hasta que
+              se sienta digno.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card m-1 p-2">
+          <img class="card-img-top" src="https://media.tenor.com/g0Y1UAfCUt4AAAAC/elsword-noah.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Noah</h5>
+            <p class="card-text">Utiliza una hoz como arma principal y utiliza el poder de la luna y la oscuridad que
+              mutó a partir de un experimento.
+
+              Perdió a su hermano por la Orden de Henir y se olvidó de él, pero recuperó su memoria después de El
+              Explosion y fue sellado en breve.
+
+              Después de que hayan pasado muchos años, amaneció dentro del templo afectado por la restauración de
+              Elrianode.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <!--Galeria Grupo Card #3- -->
+        <div class="card-group">
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="https://media.tenor.com/07WjoyT_xJQAAAAC/elsword-add.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Add</h5>
+              <p class="card-text">Add es descendiente de una prominente familia de investigadores de Nasod que fueron
+                perseguidos por investigar el conocimiento prohibido para hacer que Nasod fuera más "humano".
+
+                Mientras escapaba, Add logra caer en las grietas del tiempo y el espacio, obteniendo un conocimiento
+                masivo.
+
+                Posteriormente, Add logra escapar de las grietas del tiempo y el espacio y ser un viaje para regresar a
+                su propia línea de tiempo.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="https://media.tenor.com/Y3-UzeromGYAAAAM/elsword-ara.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ara</h5>
+              <p class="card-text">Ara Haan nació en una familia de artes marciales en el Imperio del Norte.
+
+                Su hermano Aren es poseído por un demonio y termina destruyendo su propio pueblo y familia como 'Ran'
+                mientras busca a 'Moon El'.
+
+                Con la ayuda de Eun , un zorro divino que fue sellado dentro del santuario ancestral de su familia, Ara
+                se embarca en un viaje para devolver a su hermano a su estado original.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-1 p-2">
+            <img class="card-img-top" src="https://media.tenor.com/Ssy-V0YkKusAAAAC/elsword-raven.gif"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Raven</h5>
+              <p class="card-text">Un plebeyo que se abrió camino hasta convertirse en el capitán de un conocido
+                Mercenary Knights.
+
+                Sin embargo, fue incriminado por aristócratas celosos y pierde todo lo que le importa en una noche.
+
+                Raven fue revivida por los Nasods y prometió vengarse del Reino de Velder.
+
+                Ahora se siente responsable de todas sus acciones pasadas y se une a El Search Party como una forma de
+                expiación.
+                demonios.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <!--Galeria Grupo Card #4--->
+  
+          <div class="card-group">
+            <div class="card m-1 p-2">
+              <img class="card-img-top"
+                src="https://media.tenor.com/7HJvxAXjARIAAAAC/elsword-luciel.gif"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lu-ciel</h5>
+                <p class="card-text">La reina destronada del reino de los demonios y un asesino a sueldo.
+
+                  Perseguidos por asesinos demoníacos, se acercan a la muerte, pero pudieron formar un contrato espiritual que les permite escapar por poco de los asesinos.
+                  
+                  Para recuperar el poder y la autoridad perdidos de Lu, emprenden un viaje siguiendo las huellas de los demonios..</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card m-1 p-2">
+              <img class="card-img-top"
+                src="https://media.tenor.com/tpOfFjPLiqIAAAAC/elsword-rena.gif"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Rena </h5>
+                <p class="card-text">La más maduras y bellas de El Search Party.
+
+                  Con la conexión con el mundo de los espíritus cada vez más débil, Rena está decidida a restaurar el poder de El para restaurar esa conexión a la normalidad.
+                  
+                  Ella siente que El resuena en el árbol El de Ruben Village, por lo que va a investigar..</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card m-1 p-2">
+              <img class="card-img-top"
+                src="https://media.tenor.com/ANSlySkWAy4AAAAC/elsword-rose.gif"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Rose</h5>
+                <p class="card-text">Nombre: Anna Testarossa
+                  Miembro del [Jardín Majestuoso] que protege la Ciudad Real en el Cielo.
+                  
+                  Se le dio el nombre en clave [Rose], como la más poderosa del Majestic Garden.
+                  
+                  Para eliminar a los enemigos que amenazan el Cielo, a Rose se le encomendó la tarea de investigar una dimensión diferente llamada Elrios..</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+
+
+            <!--Galeria Grupo Card #6--->
+            <h3 id="titulo" class="text-center">👹Demonios 👹</h3>
+            <div class="card-group">
+              <div class="card m-1 p-2">
+                <img class="card-img-top" src="https://media.tenor.com/pnVRLhaJTmMAAAAC/elsword-rosso.gif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Rosso</h5>
+                  <p class="card-text">corrupto fortalecido al encerrarse en el rublo oscuro de la torre, su cuerpo ahora está completamente consumido en la oscuridad. En su máxima potencia, no se rendirá sin dar pelea.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card m-1 p-2">
+                <img class="card-img-top" src="https://media.tenor.com/1aUJdbctPZ4AAAAd/elsword-pruinaum-raid.gif"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Berserk Berthe</h5>
+                  <p class="card-text">desatando los verdaderos poderes del alma de Aegirp, Berthe ha comenzado a fusionarse con el poder del antiguo rey y se ha convertido en un gigante.</p>
+                  <pclass="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card m-1 p-2">
+                <img class="card-img-top"
+                  src="https://media.tenor.com/BOB2b9fK0-cAAAAd/elsword-pruinaum-raid.gif"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Hadron</h5>
+                  <p class="card-text">un rango superior del Ejército White-Ghost y un maestro de artes marciales por derecho propio. Todo un reto para los que se adentran en el castillo.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <!--Galeria Grupo Card #7--->
+              <div class="card-group">
+                <div class="card m-1 p-2">
+                  <img class="card-img-top"
+                    src="img/Hermano de ara.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ran</h5>
+                    <p class="card-text">El segundo comandante de escuadrón del Ejército Red-Demon que invadió Hamel. Ha capturado a la Sacerdotisa del Agua y ha obtenido el Sello de Agua de Avalanche..</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top"
+                    src="img/ojo.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Stirbargen</h5>
+                    <p class="card-text"> Uno de los cuatro señores más poderosos del Reino de los Demonios y líder del Ejército de los Demonios Rojos y cambiaformas. Conocido entre los otros Demon Lords por su inteligencia e ingenio en lugar de su fuerza bruta. Fue traicionado y sellado en el subespacio Demon World, pero logró escapar a Elrios pero sus poderes se dispersaron en el proceso. Ya no elige bandos, Stirbargen solo vive para su propio disfrute. Actualmente toma principalmente la forma de un niño..</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card m-1 p-2">
+                  <img class="card-img-top"
+                    src="img/jin and in.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jin y In</h5>
+                    <p class="card-text">Los gemelos demonios que sirven como comandantes del Ejército de Ojos Oscuros directamente bajo
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+
+                <!--Galeria Grupo Card #8--->
+                <div class="card-group">
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top"
+                      src="img/JEFE.jpg"alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Scar</h5>
+                      <p class="card-text">El General Demonio del Ejército de Ojos Oscuros y el que intenta revivir al Dios Demonio Sult..</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top"
+                      src="img/karys.jpg"alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Karys</h5>
+                      <p class="card-text">El primer comandante de escuadrón del Ejército Red-Demon. El comandante Demon a cargo de provocar el estallido civil en Sander. Ex asociada de Luciela, es un demonio de alto rango que trabaja junto a Ran.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card m-1 p-2">
+                    <img class="card-img-top"
+                      src="img/hennon.jpg"alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Hennon</h5>
+                      <p class="card-text">Es uno de los demonios más destacados en la historia de Kimetsu no Yaiba. Es
+                        un
+                        demonio con la habilidad de manipular los sueños y las pesadillas de las personas, lo que le
+                        permite controlarlas y hacerles creer que están viviendo situaciones reales mientras duermen.
+                        Tiene una personalidad fría y calculadora, y es un luchador hábil con una gran fuerza física, lo
+                        que lo hace peligroso en combate.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                  <!--Galeria Grupo Card #9--->
+
+                  
+                    
+                    
+                     
+
+
+                  <br><br>
+                  <!--Fin Galeria-->
+
+                  <!--Galeria de Videos-->
+
+
+                  <h3 id="titulo" class="text-center"> Gameplays</h3>
+                  <hr>
+
+                  <div class="card-group">
+                    <div class="card">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/eE3dQi59wBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      
+                      <div class="card-body">
+                        <h5 class="card-title">Crimson Cradle of Flames Solo play 12-7</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/W3zhDKs3Mqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                      <div class="card-body">
+                        <h5 class="card-title"> Altar of Invocation 15-6</h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Xwljo0MIdbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <div class="card-body">
+                        <h5 class="card-title"> Birth of Origin 18-4
+                        </h5>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+              </div>
+
+
+              <h3 id="titulo" class="text-center">Otras paginas relacionadas </h3>
+              <hr>
+              <!-- Boton Ver Serie-->
+
+              <div class="w-100 ">
+
+                <!-- Boton Ver Serie-->
+                <div class="text-center center-block">
+
+                  <a href="https://elwiki.net/w/Main_Page" target="_blank"
+                    class="btn btn-danger btn-lg btn-block" tabindex="-1" role="button" aria-disabled="true">Elswiki</a>
+
+                </div>
+                <br>
+                <div class="text-center center-block">
+
+                  <a href="https://ordinary-site.eu/balance"
+                    target="_blank" class="btn btn-danger btn-lg btn-block" tabindex="-1" role="button"
+                    aria-disabled="true">Notas de las actualizaciones de personajes 
+                  </a>
+
+                </div>
+                <br>
+                <div class="text-center center-block">
+
+                  <a href="https://es.elsword.gameforge.com/thegame/download" target="_blank"
+                    class="btn btn-danger btn-lg btn-block" tabindex="-1" role="button" aria-disabled="true">Link de Descarga Aqui</a>
+
+                </div>
+                <br>
+                <div class="text-center center-block">
+
+                  
+
+                </div>
+                <!--Fin Boton Ver Serie-->
+
+
+                <!--Redes Sociales-->
+                <br>
+                
+                <hr />
+                <div class="text-center center-block">
+                  <div class="social">
+                  
+                  </div>
+
+                </div>
+                <hr />
+                <h4 class="text-center">Jesus Spraus <small>&copy; 2023. Todos los derechos reservados.</small>
+                </h4>
+                <!--Fin Redes Sociales-->
+
+                <!--Footer-->
+                <footer id="footer" class="pb-4 pt-4 bg-danger">
+                  <div class="container">
+                    <div class="row text-center">
+                      <div class=" col-12 col-lg">
+                        <a href="pagina.html">Home</a>
+                      </div>
+                    
+                      </div>
+
+                    </div>
+                  </div>
+                </footer>
+                <!--Fin footer-->
+
+              </div>
+
+              <!--Main Container-->
+
+
+            </div>
+
+            <!-- Optional JavaScript -->
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+              crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+              integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+              integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+              crossorigin="anonymous"></script>
+            <script src="index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js "
+              integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc "
+              crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
